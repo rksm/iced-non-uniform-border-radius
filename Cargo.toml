@@ -1,0 +1,15 @@
+[package]
+name = "iced-non-uniform-border-radius"
+version = "0.1.0"
+authors = ["Robert Krahn <robert@kra.hn>"]
+edition = "2021"
+publish = false
+
+[dependencies]
+iced = { git = "https://github.com/rksm/iced", branch = "non-uniform-border-radius-for-quads", default-features = false }
+iced_native = { git = "https://github.com/rksm/iced", branch = "non-uniform-border-radius-for-quads" }
+
+[features]
+default = ["wgpu"]
+wgpu = ["iced/wgpu"]
+glow = ["iced/glow"]
